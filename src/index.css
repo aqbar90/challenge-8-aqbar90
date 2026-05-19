@@ -5,7 +5,7 @@
  * Docs: https://tailwindcss.com/docs/installation/using-vite
  */
 
-@import "tailwindcss";
+@import 'tailwindcss';
 
 /* Tell Tailwind where to scan for classes */
 @source "./**/*.{js,jsx,ts,tsx}";
