@@ -1,3 +1,4 @@
+import HomePage from './pages/HomePage';
 /**
  * Main App Component
  *

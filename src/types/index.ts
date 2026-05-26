@@ -43,6 +43,11 @@ export interface MobileMenuProps {
   onClose: () => void;
 }
 
+export interface SectionProps {
+  id?: string;
+  children: React.ReactNode;
+  className?: string;
+}
 // ==========================================
 // Section Data Types
 // ==========================================
@@ -121,16 +126,6 @@ export interface ContactFormData {
   name: string;
   email: string;
   message: string;
-}
-
-export interface HamburgerButtonProps {
-  isOpen: boolean;
-  onToggle: () => void;
-}
-
-export interface MobileMenuProps {
-  isOpen: boolean;
-  onClose: () => void;
 }
 
 // ==========================================

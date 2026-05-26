@@ -6,12 +6,13 @@ const Container = ({ children }: ContainerProps) => {
   return (
     <div
       className='
-        mx-auto
-        w-full
-        max-w-[1280px]
-        px-4
-        md:px-6
-        lg:px-8
+        
+        px-3xl
+        py-xl
+        md:px-4xl
+        md:py-2xl
+        lg:px-5xl
+        lg:py-3xl
       '
     >
       {children}
