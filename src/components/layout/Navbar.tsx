@@ -46,7 +46,6 @@ const Navbar = () => {
               <nav
                 className='
                 flex
-                
                 items-center
                 gap-1.5
               '
