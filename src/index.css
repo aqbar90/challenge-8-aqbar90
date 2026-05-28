@@ -4,6 +4,7 @@
  * Tailwind CSS v4 - Using new @import syntax
  * Docs: https://tailwindcss.com/docs/installation/using-vite
  */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700;800&display=swap');
 
 @import 'tailwindcss';
 
@@ -18,13 +19,220 @@
  * Prefer using Tailwind utilities in components
  */
 
-/* Smooth scrolling for anchor links */
-html {
-  scroll-behavior: smooth;
+@theme {
+  /* Font */
+
+  --font-primary: 'Quicksand', sans-serif;
+
+  /* Font Weight */
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* Dispaly Typography */
+
+  --text-display-3xl: 3.75rem; /* 60px */
+  --text-display-2xl: 3rem; /* 48px */
+  --text-display-xl: 2.5rem; /* 40px */
+  --text-display-lg: 2.25rem; /* 36px */
+  --text-display-md: 2rem; /* 32px */
+  --text-display-sm: 1.75rem; /* 28px */
+  --text-display-xs: 1.5rem; /* 24px */
+
+  /* Body Typography */
+
+  --text-xl: 1.25rem; /* 20px */
+  --text-lg: 1.125rem; /* 18px */
+  --text-md: 1rem; /* 16px */
+  --text-sm: 0.875rem; /* 14px */
+  --text-xs: 0.75rem; /* 12px */
+
+  /* Line Height */
+
+  --leading-display-3xl: 4.5rem;
+  --leading-display-2xl: 3.75rem;
+  --leading-display-xl: 3rem;
+  --leading-display-lg: 2.75rem;
+  --leading-display-md: 2.5rem;
+  --leading-display-sm: 2.25rem;
+  --leading-display-xs: 2rem;
+
+  --leading-xl: 2.125rem;
+  --leading-lg: 2rem;
+  --leading-md: 1.875rem;
+  --leading-sm: 1.625rem;
+  --leading-xs: 1.5rem;
+
+  /* Letter Spacing */
+
+  --tracking-display: -0.02em;
+
+  /* Primary Color Scale */
+
+  --color-primary-100: #ffe0d8;
+  --color-primary-200: #ff623e;
+  --color-primary-300: #cc4e32;
+  --color-primary-400: #80311f;
+
+  --color-primary: #ff623e;
+
+  /* Neutral Scale */
+
+  --color-neutral-25: #fdfdfd;
+  --color-neutral-50: #fafafa;
+  --color-neutral-100: #f5f5f5;
+  --color-neutral-200: #e9eaeb;
+  --color-neutral-300: #d5d7da;
+  --color-neutral-400: #a4a7ae;
+  --color-neutral-500: #717680;
+  --color-neutral-600: #535862;
+  --color-neutral-700: #414651;
+  --color-neutral-800: #252b37;
+  --color-neutral-900: #181d27;
+  --color-neutral-950: #0a0d12;
+
+  /* Base Color */
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Border Radius */
+
+  --radius-none: 0;
+  --radius-xxs: 2px;
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 10px;
+  --radius-xl: 12px;
+  --radius-2xl: 16px;
+  --radius-3xl: 20px;
+  --radius-4xl: 24px;
+  --radius-full: 9999px;
+
+  /* Spacing Scale */
+
+  --spacing-none: 0px;
+
+  --spacing-xxs: 2px;
+  --spacing-xs: 4px;
+  --spacing-sm: 6px;
+  --spacing-md: 8px;
+  --spacing-lg: 12px;
+
+  --spacing-xl: 16px;
+  --spacing-2xl: 20px;
+  --spacing-3xl: 24px;
+  --spacing-4xl: 32px;
+  --spacing-5xl: 40px;
+  --spacing-6xl: 48px;
+  --spacing-7xl: 64px;
+  --spacing-8xl: 80px;
+  --spacing-9xl: 96px;
+  --spacing-10xl: 128px;
+  --spacing-11xl: 140px;
+
+  /* Layout */
+
+  --container-width: 1280px;
 }
 
+/* Global Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth scrolling for anchor links */
+
+/* HTML dan Body */
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100dvh;
+
+  font-family: var(--font-primary);
+
+  background-color: var(--color-white);
+  color: var(--color-neutral-900);
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Media Reset */
+
+/* img,
+picture,
+svg,
+video,
+canvas {
+  display: block;
+  max-width: 100%;
+} */
+
+/* Form Reset */
+
+/* input,
+button,
+textarea,
+select {
+  font: inherit;
+} */
+
+/* button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+textarea {
+  resize: vertical;
+} */
+
+/* Link Reset */
+
+/* a {
+  color: inherit;
+  text-decoration: none;
+} */
+
+/* List Reset */
+
+/* ul,
+ol {
+  list-style: none;
+} */
+
+/* Typography Reset */
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: inherit;
+} */
+
+/* p {
+  overflow-wrap: break-word;
+} */
+
 /* Optional: Custom scrollbar styles */
-/* Uncomment if you want custom scrollbar
+/* Uncomment if you want custom scrollbar */
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -41,4 +249,19 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-*/
+
+/* Marque Animation */
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}

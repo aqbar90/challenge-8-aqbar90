@@ -25,14 +25,29 @@ export type ButtonVariant = 'primary' | 'secondary' | 'outline';
  * Example: Button Props
  * Uncomment dan sesuaikan dengan kebutuhan
  */
-// export interface ButtonProps {
-//   variant?: ButtonVariant;
-//   children: React.ReactNode;
-//   onClick?: () => void;
-//   className?: string;
-//   disabled?: boolean;
-// }
+export interface ButtonProps {
+  variant?: ButtonVariant;
+  children: React.ReactNode;
+  onClick?: () => void;
+  className?: string;
+  disabled?: boolean;
+}
 
+export interface HamburgerButtonProps {
+  isOpen: boolean;
+  onToggle: () => void;
+}
+
+export interface MobileMenuProps {
+  isOpen: boolean;
+  onClose: () => void;
+}
+
+export interface SectionProps {
+  id?: string;
+  children: React.ReactNode;
+  className?: string;
+}
 // ==========================================
 // Section Data Types
 // ==========================================
@@ -50,42 +65,42 @@ export type ButtonVariant = 'primary' | 'secondary' | 'outline';
 /**
  * Example: Service/Product Item
  */
-// export interface ServiceItem {
-//   id: number;
-//   title: string;
-//   description: string;
-//   icon?: string;
-//   image?: string;
-// }
+export interface ServiceItem {
+  id: number;
+  title: string;
+  description: string;
+  icon?: string;
+  image?: string;
+}
 
 /**
  * Example: Team Member
  */
-// export interface TeamMember {
-//   id: number;
-//   name: string;
-//   position: string;
-//   bio?: string;
-//   image: string;
-//   socialLinks?: {
-//     linkedin?: string;
-//     twitter?: string;
-//     github?: string;
-//   };
-// }
+export interface TeamMember {
+  id: number;
+  name: string;
+  position: string;
+  bio?: string;
+  image: string;
+  socialLinks?: {
+    linkedin?: string;
+    twitter?: string;
+    github?: string;
+  };
+}
 
 /**
  * Example: Testimonial
  */
-// export interface Testimonial {
-//   id: number;
-//   name: string;
-//   position: string;
-//   company: string;
-//   message: string;
-//   avatar?: string;
-//   rating?: number;
-// }
+export interface Testimonial {
+  id: number;
+  name: string;
+  position: string;
+  company: string;
+  message: string;
+  avatar?: string;
+  rating?: number;
+}
 
 // ==========================================
 // Navigation Types
@@ -94,11 +109,11 @@ export type ButtonVariant = 'primary' | 'secondary' | 'outline';
 /**
  * Navigation menu item
  */
-// export interface NavItem {
-//   label: string;
-//   href: string;
-//   external?: boolean;
-// }
+export interface NavItem {
+  label: string;
+  href: string;
+  external?: boolean;
+}
 
 // ==========================================
 // Form Types (if needed)
@@ -107,11 +122,11 @@ export type ButtonVariant = 'primary' | 'secondary' | 'outline';
 /**
  * Contact form data
  */
-// export interface ContactFormData {
-//   name: string;
-//   email: string;
-//   message: string;
-// }
+export interface ContactFormData {
+  name: string;
+  email: string;
+  message: string;
+}
 
 // ==========================================
 // TODO: Add more types as needed!
