@@ -1,19 +1,25 @@
 import Upwork from '../assets/icons/brands/Upwork.png';
-import zoom from '../assets/icons/brands/zoom.png';
+import Zoom from '../assets/icons/brands/zoom.png';
 import Postman from '../assets/icons/brands/postman.png';
-import databricks from '../assets/icons/brands/databricks.png';
-import airbnb from '../assets/icons/brands/airbnb.png';
-import dropbox from '../assets/icons/brands/dropbox.png';
-import paypal from '../assets/icons/brands/paypal.png';
+import Databricks from '../assets/icons/brands/databricks.png';
+import Airbnb from '../assets/icons/brands/airbnb.png';
+import Dropbox from '../assets/icons/brands/dropbox.png';
+import Paypal from '../assets/icons/brands/paypal.png';
+import Adobe from '../assets/icons/Brands/Adobe.png';
+import Netflix from '../assets/icons/Brands/Netflix.png';
 
 export const clientsData = [
+  {
+    name: 'Adobe',
+    logo: Adobe,
+  },
   {
     name: 'Upwork',
     logo: Upwork,
   },
   {
     name: 'Zoom',
-    logo: zoom,
+    logo: Zoom,
   },
   {
     name: 'Postman',
@@ -21,18 +27,22 @@ export const clientsData = [
   },
   {
     name: 'Databricks',
-    logo: databricks,
+    logo: Databricks,
   },
   {
     name: 'Airbnb',
-    logo: airbnb,
+    logo: Airbnb,
   },
   {
     name: 'Dropbox',
-    logo: dropbox,
+    logo: Dropbox,
   },
   {
     name: 'Paypal',
-    logo: paypal,
+    logo: Paypal,
+  },
+  {
+    name: 'Netflix',
+    logo: Netflix,
   },
 ];
