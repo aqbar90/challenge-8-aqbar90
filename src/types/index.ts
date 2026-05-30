@@ -62,6 +62,8 @@ export interface SectionProps {
  * - dll.
  */
 
+// Process Item
+
 export interface ProcessItem {
   id: number;
   title: string;
@@ -77,6 +79,15 @@ export interface ServiceItem {
   description: string;
   icon?: string;
   image?: string;
+}
+
+// Industry Secion
+
+export interface Industry {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
 }
 
 /**
