@@ -6,6 +6,7 @@ import PortfolioSection from '../components/sections/PortfolioSection';
 import ProcessSection from '../components/sections/ProcessSection';
 import ServicesSection from '../components/sections/ServiceSection';
 import StatsSection from '../components/sections/StatsSection';
+import TestimonialsSection from '../components/sections/TestimonialsSection';
 // import Footer from '../components/layout/Footer';
 
 const HomePage = () => {
@@ -21,6 +22,7 @@ const HomePage = () => {
         <ServicesSection />
         <IndustrySection />
         <PortfolioSection />
+        <TestimonialsSection />
       </main>
     </>
   );
