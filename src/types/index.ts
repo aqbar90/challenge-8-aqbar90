@@ -62,6 +62,12 @@ export interface SectionProps {
  * - dll.
  */
 
+export interface ProcessItem {
+  id: number;
+  title: string;
+  description: string;
+}
+
 /**
  * Example: Service/Product Item
  */
