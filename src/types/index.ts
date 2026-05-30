@@ -112,9 +112,8 @@ export interface TeamMember {
 export interface Testimonial {
   id: number;
   name: string;
-  position: string;
-  company: string;
-  message: string;
+  status: string;
+  review: string;
   avatar?: string;
   rating?: number;
 }
