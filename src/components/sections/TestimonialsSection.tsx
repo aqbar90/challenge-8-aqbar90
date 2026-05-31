@@ -76,13 +76,22 @@ const TestimonialsSection = () => {
         {/* Mobile */}
 
         <div className='mt-16 lg:hidden'>
-          <TestimonialCard
-            review={testimonialsData[activeIndex].review}
-            name={testimonialsData[activeIndex].name}
-            status={testimonialsData[activeIndex].status}
-            avatar={testimonialsData[activeIndex].avatar}
-            active
-          />
+          <div
+            className='
+            relative
+            w-full
+            max-w-300
+            h-80
+          '
+          >
+            <TestimonialCard
+              review={testimonialsData[activeIndex].review}
+              name={testimonialsData[activeIndex].name}
+              status={testimonialsData[activeIndex].status}
+              avatar={testimonialsData[activeIndex].avatar}
+              active
+            />
+          </div>
         </div>
 
         {/* Desktop */}
