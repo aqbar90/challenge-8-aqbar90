@@ -1,5 +1,6 @@
 import Navbar from '../components/layout/Navbar';
 import ClientsSection from '../components/sections/ClientsSection';
+import FAQSection from '../components/sections/FAQSection';
 import HeroSection from '../components/sections/HeroSection';
 import IndustrySection from '../components/sections/IndustrySection';
 import PortfolioSection from '../components/sections/PortfolioSection';
@@ -23,6 +24,7 @@ const HomePage = () => {
         <IndustrySection />
         <PortfolioSection />
         <TestimonialsSection />
+        <FAQSection />
       </main>
     </>
   );

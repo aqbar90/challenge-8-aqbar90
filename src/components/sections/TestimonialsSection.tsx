@@ -30,7 +30,6 @@ const TestimonialsSection = () => {
         overflow-hidden
         py-10
         px-4
-        gap-12
         lg:py-20
         lg:gap-20
       '
@@ -104,7 +103,7 @@ const TestimonialsSection = () => {
             relative
             w-full
             max-w-300
-            h-155
+            h-95
           '
           >
             {/* Prev Card */}
@@ -177,7 +176,6 @@ const TestimonialsSection = () => {
 
         <div
           className='
-            mt-16
             flex
             justify-center
             gap-2
