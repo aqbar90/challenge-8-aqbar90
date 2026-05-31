@@ -2,6 +2,7 @@ import Navbar from '../components/layout/Navbar';
 import ClientsSection from '../components/sections/ClientsSection';
 import ContactSection from '../components/sections/ContactSection';
 import FAQSection from '../components/sections/FAQSection';
+import FooterSection from '../components/sections/FooterSection';
 import HeroSection from '../components/sections/HeroSection';
 import IndustrySection from '../components/sections/IndustrySection';
 import PortfolioSection from '../components/sections/PortfolioSection';
@@ -27,6 +28,7 @@ const HomePage = () => {
         <TestimonialsSection />
         <FAQSection />
         <ContactSection />
+        <FooterSection />
       </main>
     </>
   );

@@ -11,15 +11,17 @@ const Logo = () => {
       gap-[8.53px]
       text-xl
       font-bold
-     text-neutral-950
       '
     >
-      <img
-        src={logoSymbol}
-        alt='Your Logo'
-        className='h-10 md:h-12 lg:h-14 w-auto'
-      />
-      <span className='font-bold font-primary leading-none text-display-xs md:text-display-sm lg:text-display-md text-neutral-950'>
+      <img src={logoSymbol} alt='Your Logo' className='h-7 w-auto' />
+      <span
+        className='
+      font-semibold 
+      font-primary 
+      leading-xl 
+      text-xl
+      '
+      >
         Your Logo
       </span>
     </a>
