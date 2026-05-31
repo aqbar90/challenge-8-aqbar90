@@ -16,7 +16,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
         bg-neutral-100
       '
     >
-      <div className='flex flex-col px-3xl py-xl'>
+      <div className='flex flex-col px-xl py-3xl'>
         {/* Header */}
 
         <div className='flex items-center justify-between'>
@@ -29,7 +29,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
 
         {/* Menu */}
 
-        <div className=' flex flex-col gap-3 p-2'>
+        <div className=' flex flex-col gap-3 top-16 left-4 mt-5'>
           {navigationItems.map((item) => (
             <a
               key={item.label}
@@ -37,7 +37,11 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
               onClick={onClose}
               className='
                 text-sm
+                font-primary
                 font-semibold
+                leading-sm
+                lg:text-md
+                lg:leading-md
               '
             >
               {item.label}
@@ -45,7 +49,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
           ))}
 
           <div>
-            <Button className='w-screen h-11 p-2 gap-3 bg-primary-200 text-white text-sm font-bold'>
+            <Button size='md' className='w-110'>
               Let's Talk
             </Button>
           </div>

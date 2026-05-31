@@ -13,70 +13,83 @@ const Navbar = () => {
 
   return (
     <>
-      <header
-        className='
-          sticky
-          border-b
-          border-neutral-200
-        '
-      >
+      <header>
         <Container>
           <div
             className='
+              py-3xl
+              px-xl
+              lg:px-11xl
               flex
-              h-16
+              h-4
               items-center
               justify-between
-              
             '
           >
             {/* Logo */}
-            <Logo />
+
+            <div>
+              <Logo />
+            </div>
 
             {/* Desktop Navigation */}
 
             <div
               className='
-              hidden
-              md:flex
-              items-center
-              gap-3
+              flex
+              mx-auto
+              px-5
+              lg:px-8
             '
             >
               <nav
                 className='
-                flex
+                relative
+                grid
+                grid-cols-[180px_1fr_180px]
+                h-18
                 items-center
-                gap-1.5
+                justify-between
               '
               >
-                {navigationItems.map((item) => (
-                  <a
-                    key={item.label}
-                    href={item.href}
-                    className='
-                      text-md
-                      font-semibold
-                      text-neutral-900
-                      transition-colors
-                      duration-300
-                      hover:text-primary
-                    '
-                  >
-                    {item.label}
-                  </a>
-                ))}
-              </nav>
-              <div>
-                <Button
+                <ul
                   className='
+                  absolute
+                  hidden
+                  lg:flex
+                  items-center
+                  gap-10
+                '
+                >
+                  {navigationItems.map((item) => (
+                    <li key={item.label}>
+                      <a
+                        href={item.href}
+                        className='
+                        text-md
+                        font-semibold
+                        text-neutral-900
+                        transition-colors
+                        duration-300
+                        hover:text-primary
+                      '
+                      >
+                        {item.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            </div>
+            <div className='ml-auto hidden lg:block'>
+              <Button
+                className='
                   w-49.25
                   h-11
                 '
-                >
-                  Let's Talk
-                </Button>
-              </div>
+              >
+                Let's Talk
+              </Button>
             </div>
 
             {/* Mobile Humburger */}
