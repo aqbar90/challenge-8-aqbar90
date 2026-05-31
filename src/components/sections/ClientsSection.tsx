@@ -7,9 +7,11 @@ const ClientsSection = () => {
     <section
       id='clients'
       className='
-        py-16
-        md:py-20
-        lg:py-24
+        top-31.25
+        left-4
+        gap-10
+        lg:top-57.5
+        lg:left-11xl
       '
     >
       <Container>

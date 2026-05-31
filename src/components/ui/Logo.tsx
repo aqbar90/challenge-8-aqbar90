@@ -7,15 +7,15 @@ const Logo = () => {
       className='
       flex
       items-center
-      shrink-0
       gap-[8.53px]
-      text-xl
-      font-bold
+      shrink-0
+      whitespace-nowrap
       '
     >
-      <img src={logoSymbol} alt='Your Logo' className='h-7 w-auto' />
+      <img src={logoSymbol} alt='Your Logo' className='h-7 w-auto shrink-0' />
       <span
         className='
+      whitespace-nowrap
       font-semibold 
       font-primary 
       leading-xl 

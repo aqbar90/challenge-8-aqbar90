@@ -8,40 +8,39 @@ const HeroSection = () => {
     <section
       id='hero'
       className='
-    flex
-    flex-col
-    items-start
-    gap-10
-    pt-12
-    pb-16
-    md:pt-16
-    md:pb-20
-    lg:pt-20
-    lg:pb-24
-    w-full
-    max-w-90.25
-    md:max-w-105
-    lg:max-w-163.25
+      mt-10
+      relative
+      overflow-hidden
+      px-4
+      py-10
+      lg:px-11xl
+      lg:py-57.5
   '
     >
       <Container>
         <div
           className='
+            relative
+            py-45
             flex
             flex-col
             gap-2
-            lg:grid
-            lg:grid-cols-2
-            lg:items-center
-            lg:gap-12
+            items-center
+            
+            
           '
         >
           {/* Content */}
 
           <div
             className='
-          w-full
-          max-w-130
+            top-24
+            
+            lg:text-left
+            lg:absolute
+            lg:z-20
+            lg:left-0
+            lg:-translate-y-1/2
           '
           >
             <h1
@@ -51,8 +50,11 @@ const HeroSection = () => {
                 font-bold
                 leading-display-lg
                 tracking-display
-                md:text-display-2xl
-                lg:text-display-3xl
+                lg:text-display-2xl
+                lg:leading-display-2xl
+                lg:-mr-24
+                lg:relative
+                lg:z-20
               '
             >
               {heroData.titleLine1}
@@ -75,8 +77,8 @@ const HeroSection = () => {
                 font-primary
                 tracking-normal
                 leading-md
-                lg:text-xl
-                lg:leading:xl
+                lg:text-lg
+                lg:leading-lg
               '
             >
               {heroData.description}
@@ -84,41 +86,46 @@ const HeroSection = () => {
 
             <div className='mt-8'>
               <Button
+                size='md'
                 className='
-                  w-full
-                  md:w-auto
-                  md:min-w-45
+                  min-w-110
                   h-11
                   p-2
                   gap-1
-                  rounded-full
+                  md:min-w-145
+                  lg:min-w-45
                 '
               >
                 {heroData.ctaLabel}
               </Button>
-              <div
-                className='
-                flex
-                justify-center
+            </div>
+          </div>
+          <div
+            className='
+              flex
+              justify-center
               mt-16
-              md:mt-20
-              lg:mt-0
-              lg:flex-1
-              lg:justify-end'
-              >
-                <img
-                  src={heroImage}
-                  alt='Hero Image'
-                  className='
+              lg:justify-end
+              lg:-translate-y-60
+              lg:absolute
+              lg:top-[-80px]
+              lg:-right-37.5
+              lg:z-10
+              '
+          >
+            <img
+              src={heroImage}
+              alt='Hero Image'
+              className='
                   w-full
                   max-w-105
                   md:max-w-130
-                  lg:max-w-160
-
+                  lg:max-w-200
+                  lg:object-contain
+                  lg:relative
+                  lg:z-10
                    '
-                />
-              </div>
-            </div>
+            />
           </div>
         </div>
       </Container>

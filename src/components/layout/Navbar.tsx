@@ -13,7 +13,17 @@ const Navbar = () => {
 
   return (
     <>
-      <header>
+      <header
+        className='
+        fixed
+        top-0
+        left-0
+        w-full
+        z-50
+        bg-white/30
+        backdrop-blur-lg
+      '
+      >
         <Container>
           <div
             className='
@@ -28,7 +38,7 @@ const Navbar = () => {
           >
             {/* Logo */}
 
-            <div>
+            <div className='shrink-0'>
               <Logo />
             </div>
 
@@ -42,30 +52,28 @@ const Navbar = () => {
               lg:px-8
             '
             >
-              <nav
+              <nav className='flex h-18 items-center justify-between lg:hidden'>
+                {/* Mobile Navbar */}
+              </nav>
+
+              <nav className='hidden h-6 lg:grid lg:grid-cols-[180px_1fr_180px] lg:items-center'>
+                {/* Desktop Navbar */}
+              </nav>
+
+              <ul
                 className='
-                relative
-                grid
-                grid-cols-[180px_1fr_180px]
-                h-18
-                items-center
-                justify-between
-              '
-              >
-                <ul
-                  className='
                   absolute
                   hidden
                   lg:flex
                   items-center
                   gap-10
                 '
-                >
-                  {navigationItems.map((item) => (
-                    <li key={item.label}>
-                      <a
-                        href={item.href}
-                        className='
+              >
+                {navigationItems.map((item) => (
+                  <li key={item.label}>
+                    <a
+                      href={item.href}
+                      className='
                         text-md
                         font-semibold
                         text-neutral-900
@@ -73,15 +81,14 @@ const Navbar = () => {
                         duration-300
                         hover:text-primary
                       '
-                      >
-                        {item.label}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </nav>
+                    >
+                      {item.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </div>
-            <div className='ml-auto hidden lg:block'>
+            <div className='ml-auto shrink-0 hidden lg:block'>
               <Button
                 className='
                   w-49.25

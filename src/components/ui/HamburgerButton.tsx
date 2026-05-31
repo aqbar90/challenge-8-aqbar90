@@ -12,7 +12,6 @@ const HamburgerButton = ({ isOpen, onToggle }: HamburgerButtonProps) => {
         items-center
         justify-center
         lg:hidden
-        md:hidden
       '
     >
       {isOpen ? <X size={28} /> : <Menu size={28} />}
