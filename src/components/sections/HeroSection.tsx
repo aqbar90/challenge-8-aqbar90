@@ -21,11 +21,12 @@ const HeroSection = () => {
         <div
           className='
             relative
-            py-45
+            py-4
             flex
             flex-col
             gap-2
             items-center
+            lg:py-45
             
             
           '
@@ -35,7 +36,6 @@ const HeroSection = () => {
           <div
             className='
             top-24
-            
             lg:text-left
             lg:absolute
             lg:z-20

@@ -7,12 +7,12 @@ const ClientsSection = () => {
     <section
       id='clients'
       className='
-        top-31.25
-        left-4
-        gap-10
-        lg:top-57.5
-        lg:left-11xl
-      '
+      px-4
+      py-10
+      gap-6
+      lg:py-20
+      lg:px-11xl
+    '
     >
       <Container>
         <div
@@ -32,8 +32,8 @@ const ClientsSection = () => {
               font-primary
               leading-md
               tracking-display
-              lg:text-xl
-              lg:leading-xl
+              lg:text-display-xs
+              lg:leading-display-xs
             '
           >
             Trusted by Global Innovators & Leading Brands

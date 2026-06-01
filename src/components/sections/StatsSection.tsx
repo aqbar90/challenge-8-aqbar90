@@ -1,5 +1,4 @@
 import Container from '../layout/Container';
-
 import { statsData } from '../../data/stats';
 
 const StatsSection = () => {
@@ -8,9 +7,10 @@ const StatsSection = () => {
       id='stats'
       className='
         px-4
-        py-20
+        py-10
         md:py-24
-        lg:py-28
+        lg:py-20
+        lg:px-11xl
         gap-6
       '
     >
@@ -80,7 +80,7 @@ const StatsSection = () => {
                 rounded-full
                 border
                 border-neutral-200
-                bg-white
+                bg-neutral-50
                 transition-all
                 duration-300
                 ease-out

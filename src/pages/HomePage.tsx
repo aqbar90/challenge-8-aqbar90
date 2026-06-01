@@ -10,11 +10,16 @@ import ProcessSection from '../components/sections/ProcessSection';
 import ServicesSection from '../components/sections/ServiceSection';
 import StatsSection from '../components/sections/StatsSection';
 import TestimonialsSection from '../components/sections/TestimonialsSection';
+import SEO from '../components/seo/SEO';
 // import Footer from '../components/layout/Footer';
 
 const HomePage = () => {
   return (
     <>
+      <SEO
+        title='Your Company | Web & Mobile Development'
+        description='Professional web development, mobile app development, UI/UX design and cloud solutions.'
+      />
       <Navbar />
 
       <main>
