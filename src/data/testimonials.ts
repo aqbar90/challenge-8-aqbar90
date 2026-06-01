@@ -1,4 +1,4 @@
-import sarahAvatar from '../assets/Image/Testimonials/sarah-tan.jpg';
+import sarahAvatar from '../assets/Image/Testimonials/Sarah-Tan.jpg';
 import johnAvatar from '../assets/Image/Testimonials/Jhon-Chen.jpg';
 import emilyAvatar from '../assets/Image/Testimonials/Emily-Chen.jpg';
 import type { Testimonial } from '../types';
