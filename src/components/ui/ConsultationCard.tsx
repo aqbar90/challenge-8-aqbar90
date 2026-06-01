@@ -46,6 +46,8 @@ const ConsultationCard = () => {
       <img
         src={consultationImage}
         alt='Consultation'
+        loading='lazy'
+        decoding='async'
         className='
           mt-2
           h-auto
@@ -74,6 +76,7 @@ const ConsultationCard = () => {
           w-full
           rounded-full
           bg-black
+          dark:bg-white
           p-2
           text-md
           font-primary
@@ -82,7 +85,9 @@ const ConsultationCard = () => {
           leading-md
           border
           border-neutral-700
+          dark:border-neutral-200
           text-white
+          dark:text-black
           transition-all
           duration-500
           hover:scale-102

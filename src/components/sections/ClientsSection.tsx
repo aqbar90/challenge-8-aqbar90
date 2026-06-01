@@ -1,5 +1,4 @@
 import Container from '../layout/Container';
-
 import { clientsData } from '../../data/clients';
 
 const ClientsSection = () => {
@@ -7,10 +6,15 @@ const ClientsSection = () => {
     <section
       id='clients'
       className='
-        py-16
-        md:py-20
-        lg:py-24
-      '
+      px-4
+      py-10
+      gap-6
+      transition-colors
+      duration-300
+      dark:bg-black
+      lg:py-20
+      lg:px-11xl
+    '
     >
       <Container>
         <div
@@ -30,8 +34,12 @@ const ClientsSection = () => {
               font-primary
               leading-md
               tracking-display
-              lg:text-xl
-              lg:leading-xl
+              text-black
+              dark:text-white
+              transition-colors
+              duration-300
+              lg:text-display-xs
+              lg:leading-display-xs
             '
           >
             Trusted by Global Innovators & Leading Brands
@@ -59,6 +67,7 @@ const ClientsSection = () => {
               w-16
               bg-linear-to-r
               from-white
+              dark:from-black
               to-transparent
               '
             />
@@ -75,6 +84,7 @@ const ClientsSection = () => {
               w-16
               bg-linear-to-l
              from-white
+             dark:from-black
               to-transparent
     '
             />
@@ -109,12 +119,16 @@ const ClientsSection = () => {
                   <img
                     src={client.logo}
                     alt={client.name}
+                    loading='lazy'
+                    decoding='async'
                     className='
                     h-8.5
                     w-auto
                     object-contain
                     opacity-40
+                    dark:opacity-60
                     grayscale
+                    dark:brightness-125
                     transition-all
                     duration-300
                     ease-out

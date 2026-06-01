@@ -1,9 +1,16 @@
 interface ContactTextareaProps {
   label: string;
-  placeholder: string;
+  placeholder?: string;
+  value?: string;
+  onChange?: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
 }
 
-const ContactTextarea = ({ label, placeholder }: ContactTextareaProps) => {
+const ContactTextarea = ({
+  label,
+  placeholder,
+  value,
+  onChange,
+}: ContactTextareaProps) => {
   return (
     <div>
       <label
@@ -14,6 +21,8 @@ const ContactTextarea = ({ label, placeholder }: ContactTextareaProps) => {
           font-primary
           font-bold
           leading-sm
+          text-black
+          dark:text-white
         '
       >
         {label}
@@ -21,6 +30,8 @@ const ContactTextarea = ({ label, placeholder }: ContactTextareaProps) => {
 
       <textarea
         rows={6}
+        value={value}
+        onChange={onChange}
         placeholder={placeholder}
         className='
           w-full
@@ -28,7 +39,13 @@ const ContactTextarea = ({ label, placeholder }: ContactTextareaProps) => {
           rounded-xl
           border
           border-neutral-200
+          dark:border-neutral-700
           bg-white
+          dark:bg-black
+          text-black
+          dark:text-white
+          placeholder:text-neutral-400
+          dark:placeholder:text-neutral-500
           px-xl
           py-2
           text-sm

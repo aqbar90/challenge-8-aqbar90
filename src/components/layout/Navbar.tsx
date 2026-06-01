@@ -5,6 +5,7 @@ import Button from '../ui/Button';
 import Logo from '../ui/Logo';
 import HamburgerButton from '../ui/HamburgerButton';
 import MobileMenu from '../ui/MobileMenu';
+import ThemeToggle from '../ui/ThemeToggle';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,68 +16,90 @@ const Navbar = () => {
     <>
       <header
         className='
-          sticky
-          border-b
-          border-neutral-200
-        '
+        fixed
+        top-0
+        left-0
+        w-full
+        z-50
+        bg-white/50
+        dark:bg-black/50
+        backdrop-blur-lg
+      '
       >
         <Container>
           <div
             className='
+              py-3xl
+              px-xl
+              lg:px-11xl
               flex
-              h-16
+              h-4
               items-center
               justify-between
-              
             '
           >
             {/* Logo */}
-            <Logo />
+
+            <div className='flex items-center gap-3 shrink-0'>
+              <Logo />
+              <ThemeToggle />
+            </div>
 
             {/* Desktop Navigation */}
 
             <div
               className='
-              hidden
-              md:flex
-              items-center
-              gap-3
+              flex
+              mx-auto
+              px-5
+              lg:px-8
             '
             >
-              <nav
+              <nav className='flex h-18 items-center justify-between lg:hidden'>
+                {/* Mobile Navbar */}
+              </nav>
+
+              <nav className='hidden h-6 lg:grid lg:grid-cols-[180px_1fr_180px] lg:items-center'>
+                {/* Desktop Navbar */}
+              </nav>
+
+              <ul
                 className='
-                flex
-                items-center
-                gap-1.5
-              '
+                  absolute
+                  hidden
+                  lg:flex
+                  items-center
+                  gap-10
+                '
               >
                 {navigationItems.map((item) => (
-                  <a
-                    key={item.label}
-                    href={item.href}
-                    className='
-                      text-md
-                      font-semibold
-                      text-neutral-900
-                      transition-colors
-                      duration-300
-                      hover:text-primary
-                    '
-                  >
-                    {item.label}
-                  </a>
+                  <li key={item.label}>
+                    <a
+                      href={item.href}
+                      className='
+                        text-md
+                        font-semibold
+                        text-neutral-900
+                        transition-colors
+                        duration-300
+                        hover:text-primary
+                      '
+                    >
+                      {item.label}
+                    </a>
+                  </li>
                 ))}
-              </nav>
-              <div>
-                <Button
-                  className='
+              </ul>
+            </div>
+            <div className='ml-auto shrink-0 hidden lg:block'>
+              <Button
+                className='
                   w-49.25
                   h-11
                 '
-                >
-                  Let's Talk
-                </Button>
-              </div>
+              >
+                Let's Talk
+              </Button>
             </div>
 
             {/* Mobile Humburger */}

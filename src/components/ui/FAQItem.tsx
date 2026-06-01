@@ -9,7 +9,15 @@ interface FAQItemProps {
 
 const FAQItem = ({ question, answer, isOpen, onToggle }: FAQItemProps) => {
   return (
-    <div className='border-b border-neutral-200'>
+    <div
+      className='
+    border-b 
+    border-neutral-200
+    dark:border-neutral-800
+    transition-colors
+    duration-300
+    '
+    >
       <button
         onClick={onToggle}
         className='
@@ -20,6 +28,10 @@ const FAQItem = ({ question, answer, isOpen, onToggle }: FAQItemProps) => {
           py-6
           pr-6
           text-left
+          text-black
+          dark:text-white
+          transition-colors
+          duration-300
         '
       >
         <span
@@ -28,6 +40,10 @@ const FAQItem = ({ question, answer, isOpen, onToggle }: FAQItemProps) => {
             font-primary
             font-bold
             leading-lg
+            text-black
+            dark:text-white
+            transition-colors
+            duration-300
             lg:text-display-xs
             lg:leading-display-xs
           '
@@ -56,6 +72,9 @@ const FAQItem = ({ question, answer, isOpen, onToggle }: FAQItemProps) => {
             lg:text-xl
             lg:leading-xl
             text-neutral-400
+            dark:text-neutral-300
+            transition-colors
+            duration-300
           '
         >
           {answer}

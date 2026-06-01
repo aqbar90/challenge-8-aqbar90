@@ -7,19 +7,27 @@ const Logo = () => {
       className='
       flex
       items-center
-      shrink-0
       gap-[8.53px]
-      text-xl
-      font-bold
-     text-neutral-950
+      shrink-0
+      whitespace-nowrap
       '
     >
       <img
         src={logoSymbol}
         alt='Your Logo'
-        className='h-10 md:h-12 lg:h-14 w-auto'
+        loading='lazy'
+        decoding='async'
+        className='h-7 w-auto shrink-0'
       />
-      <span className='font-bold font-primary leading-none text-display-xs md:text-display-sm lg:text-display-md text-neutral-950'>
+      <span
+        className='
+      whitespace-nowrap
+      font-semibold 
+      font-primary 
+      leading-xl 
+      text-xl
+      '
+      >
         Your Logo
       </span>
     </a>

@@ -23,6 +23,7 @@ const TestimonialCard = ({
         rounded-2xl
         border
         bg-neutral-50
+        dark:bg-neutral-950
         px-4
         pt-4
         pb-12
@@ -38,11 +39,14 @@ const TestimonialCard = ({
           active
             ? `
             border-neutral-300
+            dark:border-neutral-700
             shadow-md
+            dark:shadow-black/30
             opacity-100
           `
             : `
             border-neutral-200
+            dark:border-neutral-800
             opacity-50
           `
         }
@@ -92,6 +96,8 @@ const TestimonialCard = ({
           font-primary
           font-semibold
           leading-sm
+          text-black
+          dark:text-white
           lg:text-xl
           lg:leading-xl
         '
@@ -108,6 +114,8 @@ const TestimonialCard = ({
             font-primary
             font-semibold
             leading-sm
+            text-black
+            dark:text-white
             lg:text-lg
             lg:leading-lg
           '
@@ -135,6 +143,8 @@ const TestimonialCard = ({
       <img
         src={avatar}
         alt={name}
+        loading='lazy'
+        decoding='async'
         className='
           absolute
           left-1/2
@@ -143,8 +153,12 @@ const TestimonialCard = ({
           w-16
           -translate-x-1/2
           rounded-full
+          border-4
           border-white
+          dark:border-neutral-900
           object-cover
+          transition-colors
+          duration-300
         '
       />
     </article>

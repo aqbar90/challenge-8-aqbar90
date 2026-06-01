@@ -23,10 +23,13 @@ const PortfolioCard = ({ image, title, category }: PortfolioCardProps) => {
         <img
           src={image}
           alt={title}
+          loading='lazy'
+          decoding='async'
           className='
             w-full
             transition-transform
             duration-500
+            brightness-75
             group-hover:scale-103
           '
         />
@@ -56,6 +59,10 @@ const PortfolioCard = ({ image, title, category }: PortfolioCardProps) => {
             font-bold
             tracking-display
             leading-md
+            text-black
+            dark:text-white
+            transition-colors
+            duration-300
             md:text-lg
             md:leading-lg
             lg:text-xl
