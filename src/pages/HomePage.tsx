@@ -1,16 +1,38 @@
+import { lazy, Suspense } from 'react';
+
 import Navbar from '../components/layout/Navbar';
-import ClientsSection from '../components/sections/ClientsSection';
-import ContactSection from '../components/sections/ContactSection';
-import FAQSection from '../components/sections/FAQSection';
-import FooterSection from '../components/sections/FooterSection';
+
 import HeroSection from '../components/sections/HeroSection';
-import IndustrySection from '../components/sections/IndustrySection';
-import PortfolioSection from '../components/sections/PortfolioSection';
+import ClientsSection from '../components/sections/ClientsSection';
+import StatsSection from '../components/sections/StatsSection';
 import ProcessSection from '../components/sections/ProcessSection';
 import ServicesSection from '../components/sections/ServiceSection';
-import StatsSection from '../components/sections/StatsSection';
-import TestimonialsSection from '../components/sections/TestimonialsSection';
+
 import SEO from '../components/seo/SEO';
+
+// Lazy Sections
+
+const IndustrySection = lazy(
+  () => import('../components/sections/IndustrySection')
+);
+
+const PortfolioSection = lazy(
+  () => import('../components/sections/PortfolioSection')
+);
+
+const TestimonialsSection = lazy(
+  () => import('../components/sections/TestimonialsSection')
+);
+
+const FAQSection = lazy(() => import('../components/sections/FAQSection'));
+
+const ContactSection = lazy(
+  () => import('../components/sections/ContactSection')
+);
+
+const FooterSection = lazy(
+  () => import('../components/sections/FooterSection')
+);
 // import Footer from '../components/layout/Footer';
 
 const HomePage = () => {
@@ -28,12 +50,15 @@ const HomePage = () => {
         <StatsSection />
         <ProcessSection />
         <ServicesSection />
-        <IndustrySection />
-        <PortfolioSection />
-        <TestimonialsSection />
-        <FAQSection />
-        <ContactSection />
-        <FooterSection />
+
+        <Suspense fallback={null}>
+          <IndustrySection />
+          <PortfolioSection />
+          <TestimonialsSection />
+          <FAQSection />
+          <ContactSection />
+          <FooterSection />
+        </Suspense>
       </main>
     </>
   );

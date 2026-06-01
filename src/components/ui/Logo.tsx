@@ -12,7 +12,13 @@ const Logo = () => {
       whitespace-nowrap
       '
     >
-      <img src={logoSymbol} alt='Your Logo' className='h-7 w-auto shrink-0' />
+      <img
+        src={logoSymbol}
+        alt='Your Logo'
+        loading='lazy'
+        decoding='async'
+        className='h-7 w-auto shrink-0'
+      />
       <span
         className='
       whitespace-nowrap

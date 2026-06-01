@@ -119,6 +119,8 @@ const ClientsSection = () => {
                   <img
                     src={client.logo}
                     alt={client.name}
+                    loading='lazy'
+                    decoding='async'
                     className='
                     h-8.5
                     w-auto

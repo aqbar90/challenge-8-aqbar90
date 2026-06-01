@@ -143,6 +143,8 @@ const TestimonialCard = ({
       <img
         src={avatar}
         alt={name}
+        loading='lazy'
+        decoding='async'
         className='
           absolute
           left-1/2

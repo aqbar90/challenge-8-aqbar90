@@ -23,6 +23,8 @@ const PortfolioCard = ({ image, title, category }: PortfolioCardProps) => {
         <img
           src={image}
           alt={title}
+          loading='lazy'
+          decoding='async'
           className='
             w-full
             transition-transform

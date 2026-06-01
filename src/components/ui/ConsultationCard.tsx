@@ -46,6 +46,8 @@ const ConsultationCard = () => {
       <img
         src={consultationImage}
         alt='Consultation'
+        loading='lazy'
+        decoding='async'
         className='
           mt-2
           h-auto

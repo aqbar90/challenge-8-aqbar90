@@ -125,6 +125,8 @@ const IndustrySection = () => {
               <img
                 src={currentIndustry.image}
                 alt={currentIndustry.title}
+                loading='lazy'
+                decoding='async'
                 className='
                   h-auto
                   w-full

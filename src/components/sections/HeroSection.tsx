@@ -129,38 +129,21 @@ const HeroSection = () => {
               '
           >
             <img
-              src={heroImage}
-              alt='Hero Image Light'
-              className={`
-                  w-full
-                  max-w-105
-                  md:max-w-130
-                  lg:max-w-200
-                  lg:object-contain
-                  lg:relative
-                  lg:z-10
-                  transition-all
-                  duration-300
-                  dark:brightness-75
-                  ${darkMode ? 'opacity-0 absolute' : 'opacity-100'}
-                `}
-            />
-            <img
-              src={heroImageDarkMode}
-              alt='Hero Dark'
-              className={`
-            w-full
-                  max-w-105
-                  md:max-w-130
-                  lg:max-w-200
-                  lg:object-contain
-                  lg:relative
-                  lg:z-10
-                  transition-all
-                  duration-300
-                  dark:brightness-75
-                  ${darkMode ? 'opacity-100' : 'opacity-0 absolute'}
-    `}
+              src={darkMode ? heroImageDarkMode : heroImage}
+              alt='Hero Image'
+              loading='eager'
+              decoding='async'
+              className='
+              w-full
+              max-w-105
+              md:max-w-130
+              lg:max-w-200
+              lg:object-contain
+              lg:relative
+              lg:z-10
+              transition-all
+              duration-500
+            '
             />
           </div>
         </div>
