@@ -1,13 +1,17 @@
 interface ContactInputProps {
   label: string;
+  placeholder?: string;
   type?: string;
-  placeholder: string;
+  value?: string;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 const ContactInput = ({
   label,
   type = 'text',
   placeholder,
+  value,
+  onChange,
 }: ContactInputProps) => {
   return (
     <div>
@@ -30,6 +34,8 @@ const ContactInput = ({
 
       <input
         type={type}
+        value={value}
+        onChange={onChange}
         placeholder={placeholder}
         className='
           h-12

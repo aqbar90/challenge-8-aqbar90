@@ -1,7 +1,5 @@
 import { lazy, Suspense } from 'react';
-
 import Navbar from '../components/layout/Navbar';
-
 import HeroSection from '../components/sections/HeroSection';
 import ClientsSection from '../components/sections/ClientsSection';
 import StatsSection from '../components/sections/StatsSection';
