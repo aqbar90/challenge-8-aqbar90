@@ -10,6 +10,9 @@ const PortfolioSection = () => {
         py-10
         px-4
         gap-6
+        transition-colors
+        duration-300
+        dark:bg-black
         lg:py-20
         lg:px-11xl
         lg:gap-16
@@ -33,6 +36,10 @@ const PortfolioSection = () => {
               font-bold
               tracking-display
               leading-display-sm
+              text-black
+              dark:text-white
+              transition-colors
+              duration-300
               lg:text-display-xl
               lg:leading-display-xl
             '
@@ -52,6 +59,9 @@ const PortfolioSection = () => {
               lg:text-lg
               lg:leading-lg
               text-neutral-400
+              dark:text-neutral-500
+              transition-colors
+              duration-300
             '
           >
             Take a closer look at our recent work powering startups,

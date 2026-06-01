@@ -49,7 +49,7 @@ const IndustryMenu = ({ title, active, onClick }: IndustryMenuProps) => {
           transition-all
           duration-300
 
-          ${active ? 'font-semibold text-neutral-900' : 'text-neutral-400'}
+          ${active ? 'font-semibold text-neutral-900' : 'text-neutral-400 dark:text-neutral-300'}
         `}
       >
         {title}

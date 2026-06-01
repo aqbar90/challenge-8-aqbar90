@@ -14,6 +14,8 @@ const ContactTextarea = ({ label, placeholder }: ContactTextareaProps) => {
           font-primary
           font-bold
           leading-sm
+          text-black
+          dark:text-white
         '
       >
         {label}
@@ -28,7 +30,13 @@ const ContactTextarea = ({ label, placeholder }: ContactTextareaProps) => {
           rounded-xl
           border
           border-neutral-200
+          dark:border-neutral-700
           bg-white
+          dark:bg-black
+          text-black
+          dark:text-white
+          placeholder:text-neutral-400
+          dark:placeholder:text-neutral-500
           px-xl
           py-2
           text-sm

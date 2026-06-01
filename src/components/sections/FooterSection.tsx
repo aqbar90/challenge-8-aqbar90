@@ -8,6 +8,9 @@ const FooterSection = () => {
       className='
         px-4
         py-6
+        transition-colors
+        duration-300
+        dark:bg-black
         lg:py-10
         lg:px-11xl
         gap-2
@@ -17,12 +20,16 @@ const FooterSection = () => {
         className='
             rounded-4xl
             border
-            border-neutral-50
+            border-neutral-200
+            dark:border-neutral-900
             bg-neutral-100
+            dark:bg-neutral-950
             p-5
             gap-6
             lg:p-10
             lg:gap-15
+            transition-colors
+            duration-300
           '
       >
         {/* TOP SECTION */}
@@ -52,6 +59,10 @@ const FooterSection = () => {
                 font-bold
                 leading-display-sm
                 tracking-display
+                text-black
+                dark:text-white
+                transition-colors
+                duration-300
                 lg:text-2xl
                 lg:max-w-50
               '
@@ -73,6 +84,9 @@ const FooterSection = () => {
               my-8
               border-t
               border-neutral-200
+              dark:border-neutral-900
+              transition-colors
+              duration-300
               lg:my-10
             '
         />
@@ -114,7 +128,8 @@ const FooterSection = () => {
                         leading-sm
                         lg:text-md
                         lg:leading-md
-                        text-neutral-900
+                        text-black
+                        dark:text-white
                         transition-colors
                         duration-300
                         hover:text-primary

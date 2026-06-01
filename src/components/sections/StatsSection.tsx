@@ -8,6 +8,9 @@ const StatsSection = () => {
       className='
         px-4
         py-10
+        transition-colors
+        duration-300
+        dark:bg-black
         md:py-24
         lg:py-20
         lg:px-11xl
@@ -32,6 +35,10 @@ const StatsSection = () => {
               font-primary
               tracking-display
               leading-9.5
+              text-black
+              dark:text-white
+              transition-colors
+              duration-300
               md:text-display-md
               lg:text-display-xl
             '
@@ -46,6 +53,9 @@ const StatsSection = () => {
               font-medium
               leading-7
               text-neutral-500
+              dark:text-neutral-400
+              transition-colors
+              duration-300
               md:text-md
             '
           >
@@ -80,13 +90,16 @@ const StatsSection = () => {
                 rounded-full
                 border
                 border-neutral-200
+                dark:border-neutral-800
                 bg-neutral-50
+                dark:bg-neutral-950
                 transition-all
                 duration-300
                 ease-out
                 hover:-translate-y-1
                 hover:border-primary
                 hover:shadow-lg
+                dark:hover:shadow-black/30
               '
             >
               <span
@@ -111,6 +124,9 @@ const StatsSection = () => {
                   font-semibold
                   leading-7
                   text-neutral-600
+                  dark:text-neutral-300
+                  transition-colors
+                  duration-300
                   md:text-md
                 '
               >

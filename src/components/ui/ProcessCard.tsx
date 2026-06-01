@@ -15,11 +15,14 @@ const ProcessCard = ({ title, description }: ProcessCardProps) => {
         md:p-5
         lg:p-6
         border-[#DEDCDC]
+        dark:border-neutral-800
         bg-neutral-50
+        dark:bg-neutral-950
         transition-all
         duration-300
         hover:border-primary
         hover:shadow-md
+        dark:hover:shadow-black/30
       '
     >
       <div
@@ -37,6 +40,10 @@ const ProcessCard = ({ title, description }: ProcessCardProps) => {
               font-bold
               tracking-display
               leading-md
+              text-black
+              dark:text-white
+              transition-colors
+              duration-300
               md:text-lg
               md:leading-lg
               lg:text-xl
@@ -54,12 +61,18 @@ const ProcessCard = ({ title, description }: ProcessCardProps) => {
               lg:text-md
               lg:leading-md
               text-neutral-500
+              dark:text-neutral-400
+              transition-colors
+              duration-300
             '
           >
             {description}
           </p>
         </div>
-        <ChevronUp size={24} className='text-[#0A0D12]' />
+        <ChevronUp
+          size={24}
+          className='text-[#0A0D12] dark:text-white transition-colors duration-300'
+        />
       </div>
     </div>
   );

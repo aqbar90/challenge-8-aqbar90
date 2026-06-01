@@ -28,6 +28,9 @@ const ContactSection = () => {
       className='
         py-10
         px-4
+        transition-colors
+        duration-300
+        dark:bg-black
         lg:py-20
         lg:px-11xl
         gap-16
@@ -44,6 +47,10 @@ const ContactSection = () => {
               font-bold
               tracking-display
               leading-display-sm
+              text-black
+              dark:text-white
+              transition-colors
+              duration-300
               lg:text-display-xl
               lg:leading-display-xl
             '
@@ -59,6 +66,9 @@ const ContactSection = () => {
               font-medium
               leading-sm
               text-neutral-400
+              dark-text-neutral-500
+              transition-colors
+              duration-300
               lg:text-lg
               lg:leading-lg
 
@@ -100,6 +110,10 @@ const ContactSection = () => {
                 text-sm
                 font-bold
                 leading-sm
+                text-black
+                dark:text-white
+                transition-colors
+                duration-300
 
               '
             >

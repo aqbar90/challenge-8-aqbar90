@@ -1,9 +1,13 @@
 import Container from '../layout/Container';
 import Button from '../ui/Button';
 import heroImage from '../../assets/Image/heroImage.jpg';
-import { heroData } from '../../data/Hero';
+import heroImageDarkMode from '../../assets/Image/heroImageDarkMode.jpg';
+import { heroData } from '../../data/hero';
+import { useTheme } from '../../context/useTheme';
 
 const HeroSection = () => {
+  const { darkMode } = useTheme();
+
   return (
     <section
       id='hero'
@@ -13,6 +17,10 @@ const HeroSection = () => {
       overflow-hidden
       px-4
       py-10
+      transition-colors
+      duration-300
+      dark:bg-black
+      dark:text-white
       lg:px-11xl
       lg:py-57.5
   '
@@ -27,8 +35,6 @@ const HeroSection = () => {
             gap-2
             items-center
             lg:py-45
-            
-            
           '
         >
           {/* Content */}
@@ -50,6 +56,10 @@ const HeroSection = () => {
                 font-bold
                 leading-display-lg
                 tracking-display
+                text-black
+                dark:text-white
+                transition-colors
+                duration-300
                 lg:text-display-2xl
                 lg:leading-display-2xl
                 lg:-mr-24
@@ -77,6 +87,10 @@ const HeroSection = () => {
                 font-primary
                 tracking-normal
                 leading-md
+                text-black
+                dark:text-white
+                transition-colors
+                duration-300
                 lg:text-lg
                 lg:leading-lg
               '
@@ -102,6 +116,7 @@ const HeroSection = () => {
           </div>
           <div
             className='
+              relative
               flex
               justify-center
               mt-16
@@ -115,8 +130,8 @@ const HeroSection = () => {
           >
             <img
               src={heroImage}
-              alt='Hero Image'
-              className='
+              alt='Hero Image Light'
+              className={`
                   w-full
                   max-w-105
                   md:max-w-130
@@ -124,7 +139,28 @@ const HeroSection = () => {
                   lg:object-contain
                   lg:relative
                   lg:z-10
-                   '
+                  transition-all
+                  duration-300
+                  dark:brightness-75
+                  ${darkMode ? 'opacity-0 absolute' : 'opacity-100'}
+                `}
+            />
+            <img
+              src={heroImageDarkMode}
+              alt='Hero Dark'
+              className={`
+            w-full
+                  max-w-105
+                  md:max-w-130
+                  lg:max-w-200
+                  lg:object-contain
+                  lg:relative
+                  lg:z-10
+                  transition-all
+                  duration-300
+                  dark:brightness-75
+                  ${darkMode ? 'opacity-100' : 'opacity-0 absolute'}
+    `}
             />
           </div>
         </div>

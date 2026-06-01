@@ -10,6 +10,9 @@ const ProcessSection = () => {
       className='
         py-10
         px-4
+        transition-colors
+        duration-300
+        dark:bg-black
         md:py-15
         lg:py-20
         lg:px-11xl
@@ -33,6 +36,10 @@ const ProcessSection = () => {
               font-bold
               tracking-display
               leading-display-sm
+              text-black
+              dark:text-white
+              transition-colors
+              duration-300
               md:text-display-md
               md:leading-display-md
               lg:text-display-xl
@@ -49,6 +56,9 @@ const ProcessSection = () => {
               font-primary
               leading-7
               text-neutral-500
+              dark:text-neutral-400
+              transition-colors
+              duration-300
               md:text-md
               md:leading-md
               lg:text-lg
@@ -121,6 +131,9 @@ const ProcessSection = () => {
                     h-11xl
                     w-px
                     bg-neutral-300
+                    dark:bg-neutral-700
+                    transition-colors
+                    duration-300
                   '
                   />
                 )}
@@ -202,6 +215,7 @@ const ProcessSection = () => {
                       text-sm
                       font-bold
                       shadow-sm
+                      dark:shadow-black/40
                     '
                     >
                       {item.id}
@@ -215,6 +229,9 @@ const ProcessSection = () => {
                         h-40
                         w-px
                         bg-neutral-300
+                        dark:bg-neutral-700
+                        transition-colors
+                        duration-300
                       '
                       />
                     )}

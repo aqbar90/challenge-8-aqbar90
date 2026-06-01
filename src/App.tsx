@@ -11,6 +11,20 @@ import HomePage from './pages/HomePage';
  */
 
 function App() {
-  return <HomePage />;
+  return (
+    <div
+      className='
+    min-h-screen
+    bg-neutral-50
+    text-neutral-900
+    transition-colors
+    duration-300
+    dark:bg-neutral-950
+    dark:text-white
+  '
+    >
+      <HomePage />
+    </div>
+  );
 }
 export default App;

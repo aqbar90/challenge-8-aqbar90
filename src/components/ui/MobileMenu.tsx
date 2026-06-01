@@ -14,6 +14,9 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
         inset-0
         z-50
         bg-neutral-100
+        dark:bg-black
+        transition-colors
+        duration-300
       '
     >
       <div className='flex flex-col px-xl py-3xl'>
@@ -23,7 +26,14 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
           <Logo />
 
           <button type='button' onClick={onClose}>
-            <X size={28} className='text-neutral-950' />
+            <X
+              size={28}
+              className='
+            text-black
+            dark:text-white
+            transition-colors
+            duration-300'
+            />
           </button>
         </div>
 
@@ -40,6 +50,11 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
                 font-primary
                 font-semibold
                 leading-sm
+                text-black
+                dark:text-white
+                transition-colors
+                duration-300
+                hover:text-primary
                 lg:text-md
                 lg:leading-md
               '

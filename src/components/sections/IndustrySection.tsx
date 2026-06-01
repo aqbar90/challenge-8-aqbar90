@@ -17,6 +17,9 @@ const IndustrySection = () => {
         gap-6
         py-10
         px-4
+        transition-colors
+        duration-300
+        dark:bg-black
         lg:py-20
         lg:px-11xl
         lg:gap-16
@@ -33,6 +36,10 @@ const IndustrySection = () => {
               font-bold
               tracking-display
               leading-display-md
+              text-black
+              dark:text-white
+              transition-colors
+              duration-300
               lg:text-display-xl
               lg:leading-display-xl
             '
@@ -50,6 +57,9 @@ const IndustrySection = () => {
               lg:text-lg
               lg:leading-lg
               text-neutral-500
+              dark:text-neutral-400
+              transition-colors
+              duration-300
             '
           >
             We’ve helped companies across industries launch smarter, faster, and
@@ -92,6 +102,10 @@ const IndustrySection = () => {
                 font-primary
                 font-medium
                 leading-sm
+                text-neutral-700
+                dark:text-neutral-300
+                transition-colors
+                duration-300
                 md:text-md
                 md:leading-md
                 lg:text-lg
@@ -117,6 +131,7 @@ const IndustrySection = () => {
                   object-cover
                   transition-all
                   duration-500
+                  dark:brightness-75
                 '
               />
             </div>

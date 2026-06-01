@@ -30,6 +30,9 @@ const TestimonialsSection = () => {
         overflow-hidden
         py-10
         px-4
+        transition-colors
+        duration-300
+        dark:bg-black
         lg:py-20
         lg:gap-20
       '
@@ -50,6 +53,10 @@ const TestimonialsSection = () => {
               font-bold
               tracking-display
               leading-display-sm
+              text-black
+              dark:text-white
+              transition-colors
+              duration-300
               lg:text-display-xl
               lg:leading-display-xl
             '
@@ -67,6 +74,9 @@ const TestimonialsSection = () => {
               lg:text-lg
               lg:leading-lg
               text-neutral-400
+              dark:text-neutral-500
+              transition-colors
+              duration-300
             '
           >
             Trusted voices. Real experiences. Proven results.
@@ -124,6 +134,7 @@ const TestimonialsSection = () => {
             top-0
             w-120
             opacity-20
+            dark:opacity-30
             scale-90
             z-0
             origin-top
@@ -167,6 +178,7 @@ const TestimonialsSection = () => {
               top-0
               w-120
               opacity-20
+              dark:opacity-30
               scale-90
               z-0
               origin-top
@@ -199,8 +211,9 @@ const TestimonialsSection = () => {
                   w-2.5
                   rounded-full
                   transition-all
+                  duration-300
 
-                  ${index === activeIndex ? 'bg-primary' : 'bg-neutral-300'}
+                  ${index === activeIndex ? 'bg-primary' : 'bg-neutral-300 dark:bg-neutral-700'}
                 `}
             />
           ))}

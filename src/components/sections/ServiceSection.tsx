@@ -9,6 +9,9 @@ const ServicesSection = () => {
       className='
         py-10
         px-4
+        transition-colors
+        duration-300
+        dark:bg-black
         lg:py-20
         lg:px-11xl
         gap-10
@@ -32,6 +35,10 @@ const ServicesSection = () => {
               font-semibold
               tracking-normal
               leading-9.5
+              text-black
+              dark:text-white
+              transition-colors
+              duration-300
               lg:text-display-xl
               lg:font-bold
               lg:leading-14
@@ -51,6 +58,9 @@ const ServicesSection = () => {
               tracking-normal
               leading-7
               text-neutral-500
+              dark:text-neutral-400
+              transition-colors
+              duration-300
               lg:text-lg
               lg:leading-8
             '

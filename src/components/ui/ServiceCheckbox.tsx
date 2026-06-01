@@ -17,6 +17,10 @@ const ServiceCheckbox = ({
         gap-3
         cursor-pointer
         select-none
+        text-black
+        dark:text-white
+        transition-colors
+        duration-300
       '
     >
       <input
@@ -41,13 +45,13 @@ const ServiceCheckbox = ({
           ${
             checked
               ? 'border-primary bg-primary'
-              : 'border-neutral-300 bg-white'
+              : 'border-neutral-300 dark:border-neutral-700 bg-white dark:bg-black transition-all duration-300'
           }
         `}
       >
         {checked && (
           <svg
-            className='h-3 w-3 text-white'
+            className='h-3 w-3 text-white dark:text-black'
             fill='none'
             viewBox='0 0 24 24'
             stroke='currentColor'

@@ -49,6 +49,7 @@ const SocialLinks = ({ className = '' }: SocialLinksProps) => {
               rounded-full
               border
               border-neutral-100
+              dark:border-neutral-900
               transition-all
               duration-300
               hover:-translate-y-1
@@ -60,6 +61,8 @@ const SocialLinks = ({ className = '' }: SocialLinksProps) => {
               className='
                 transition-colors
                 duration-300
+                text-black
+                dark:text-white
                 group-hover:text-primary
               '
             />

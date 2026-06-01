@@ -5,6 +5,7 @@ import Button from '../ui/Button';
 import Logo from '../ui/Logo';
 import HamburgerButton from '../ui/HamburgerButton';
 import MobileMenu from '../ui/MobileMenu';
+import ThemeToggle from '../ui/ThemeToggle';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +21,8 @@ const Navbar = () => {
         left-0
         w-full
         z-50
-        bg-white/30
+        bg-white/50
+        dark:bg-black/50
         backdrop-blur-lg
       '
       >
@@ -38,8 +40,9 @@ const Navbar = () => {
           >
             {/* Logo */}
 
-            <div className='shrink-0'>
+            <div className='flex items-center gap-3 shrink-0'>
               <Logo />
+              <ThemeToggle />
             </div>
 
             {/* Desktop Navigation */}

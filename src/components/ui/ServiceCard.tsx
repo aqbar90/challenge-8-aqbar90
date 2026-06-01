@@ -13,7 +13,9 @@ const ServiceCard = ({ icon, title, description }: ServiceCardProps) => {
         rounded-2xl
         border
         border-[#DEDCDC]
+        dark:border-neutral-800
         bg-neutral-50
+        dark:bg-neutral-950
         pt-12
         pb-5
         pr-5
@@ -23,6 +25,7 @@ const ServiceCard = ({ icon, title, description }: ServiceCardProps) => {
         hover:-translate-y-1
         hover:border-primary
         hover:shadow-md
+        dark:hover:shadow-black/40
       '
     >
       {/* Floating Icon */}
@@ -67,6 +70,9 @@ const ServiceCard = ({ icon, title, description }: ServiceCardProps) => {
           lg:text-xl
           lg:leading-xl
           text-neutral-900
+          dark:text-white
+          transition-colors
+          duration-300
         '
       >
         {title}
@@ -80,6 +86,9 @@ const ServiceCard = ({ icon, title, description }: ServiceCardProps) => {
           lg:text-md
           lg:leading-md
           text-neutral-500
+          dark:text-neutral-400
+          transition-colors
+          duration-300
         '
       >
         {description}
