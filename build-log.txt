@@ -1,0 +1,48 @@
+
+> company_profile@0.0.0 build
+> tsc -b && vite build
+
+[36mvite v6.4.2 [32mbuilding for production...[36m[39m
+transforming...
+[32m✓[39m 1848 modules transformed.
+rendering chunks...
+computing gzip size...
+[2mdist/[22m[32mindex.html                                   [39m[1m[2m    0.61 kB[22m[1m[22m[2m │ gzip:     0.37 kB[22m
+[2mdist/[22m[32massets/databricks-lOTo_Sot.png               [39m[1m[2m    4.58 kB[22m[1m[22m
+[2mdist/[22m[32massets/Dropbox-DHtmELtj.png                  [39m[1m[2m    4.67 kB[22m[1m[22m
+[2mdist/[22m[32massets/Postman-Sk15CoTA.png                  [39m[1m[2m    4.86 kB[22m[1m[22m
+[2mdist/[22m[32massets/Zoom-BYEFmztQ.png                     [39m[1m[2m    8.87 kB[22m[1m[22m
+[2mdist/[22m[32massets/PayPal-JwzUh-S9.png                   [39m[1m[2m   34.31 kB[22m[1m[22m
+[2mdist/[22m[32massets/Sarah-Tan-Da4q8zmA.jpg                [39m[1m[2m   95.02 kB[22m[1m[22m
+[2mdist/[22m[32massets/Emily-Chen-D83hNY6Q.jpg               [39m[1m[2m   95.44 kB[22m[1m[22m
+[2mdist/[22m[32massets/Jhon-Chen-z6DSabF8.jpg                [39m[1m[2m   95.91 kB[22m[1m[22m
+[2mdist/[22m[32massets/Airbnb-DCX24tLa.png                   [39m[1m[2m  129.51 kB[22m[1m[22m
+[2mdist/[22m[32massets/Fintech-BgCjpk67.jpg                  [39m[1m[2m  196.31 kB[22m[1m[22m
+[2mdist/[22m[32massets/Healthcare-CFBMPus7.jpg               [39m[1m[2m  258.70 kB[22m[1m[22m
+[2mdist/[22m[32massets/E-Commerce-BUVl1rq4.jpg               [39m[1m[2m  271.69 kB[22m[1m[22m
+[2mdist/[22m[32massets/heroImage-vdUPcrsS.jpg                [39m[1m[2m  420.16 kB[22m[1m[22m
+[2mdist/[22m[32massets/Portofolio-2-ZZAyR_jh.jpg             [39m[1m[2m  513.96 kB[22m[1m[22m
+[2mdist/[22m[32massets/UX Design-D8SqEQEG.svg                [39m[1m[2m  692.60 kB[22m[1m[22m[2m │ gzip:   517.26 kB[22m
+[2mdist/[22m[32massets/Cloud Solutions-PCSQc6fZ.svg          [39m[1m[2m  713.28 kB[22m[1m[22m[2m │ gzip:   533.16 kB[22m
+[2mdist/[22m[32massets/ConsultationImage-BAKNR0ag.jpg        [39m[1m[2m  758.39 kB[22m[1m[22m
+[2mdist/[22m[32massets/Portofolio-3-mMMsic2I.jpg             [39m[1m[2m  787.83 kB[22m[1m[22m
+[2mdist/[22m[32massets/Mobile App Development-dxMNb6ai.svg   [39m[1m[2m  793.05 kB[22m[1m[22m[2m │ gzip:   593.07 kB[22m
+[2mdist/[22m[32massets/Cybersecurity Services-BnE_u8Xd.svg   [39m[1m[2m  872.24 kB[22m[1m[22m[2m │ gzip:   652.81 kB[22m
+[2mdist/[22m[32massets/mail-success-BOtV2uM5.svg             [39m[1m[2m  873.75 kB[22m[1m[22m[2m │ gzip:   654.09 kB[22m
+[2mdist/[22m[32massets/mail-failed-CIfmaJs9.svg              [39m[1m[2m  891.44 kB[22m[1m[22m[2m │ gzip:   667.51 kB[22m
+[2mdist/[22m[32massets/QA Solution-CxVWa9qI.svg              [39m[1m[2m  992.92 kB[22m[1m[22m[2m │ gzip:   744.23 kB[22m
+[2mdist/[22m[32massets/Software Development-n3r0song.svg     [39m[1m[2m1,026.51 kB[22m[1m[22m[2m │ gzip:   769.70 kB[22m
+[2mdist/[22m[32massets/Portofolio-1-BwkmcANt.jpg             [39m[1m[2m1,107.17 kB[22m[1m[22m
+[2mdist/[22m[32massets/Website-d8dxhDTK.svg                  [39m[1m[2m1,211.75 kB[22m[1m[22m[2m │ gzip:   908.96 kB[22m
+[2mdist/[22m[32massets/IT Infrastructure-DYx3L0A4.svg        [39m[1m[2m1,277.07 kB[22m[1m[22m[2m │ gzip:   958.83 kB[22m
+[2mdist/[22m[32massets/IT Consulting _ Support-gVp3sFvs.svg  [39m[1m[2m2,221.95 kB[22m[1m[22m[2m │ gzip: 1,648.84 kB[22m
+[2mdist/[22m[32massets/heroImageDarkMode-TYqht5NS.jpg        [39m[1m[2m3,174.12 kB[22m[1m[22m
+[2mdist/[22m[35massets/index-BFrKjk9D.css                    [39m[1m[2m   40.50 kB[22m[1m[22m[2m │ gzip:     7.32 kB[22m
+[2mdist/[22m[36massets/PortfolioSection-DkknasPc.js          [39m[1m[2m    3.15 kB[22m[1m[22m[2m │ gzip:     0.97 kB[22m
+[2mdist/[22m[36massets/IndustrySection-BQr2-UvX.js           [39m[1m[2m    4.04 kB[22m[1m[22m[2m │ gzip:     1.36 kB[22m
+[2mdist/[22m[36massets/FAQSection-Jfpl-diH.js                [39m[1m[2m    6.91 kB[22m[1m[22m[2m │ gzip:     1.94 kB[22m
+[2mdist/[22m[36massets/TestimonialsSection-CYYRXnqt.js       [39m[1m[2m    7.46 kB[22m[1m[22m[2m │ gzip:     2.46 kB[22m
+[2mdist/[22m[36massets/FooterSection-B5ABqYhV.js             [39m[1m[2m    8.43 kB[22m[1m[22m[2m │ gzip:     2.97 kB[22m
+[2mdist/[22m[36massets/ContactSection-pa2dOCgt.js            [39m[1m[2m    9.70 kB[22m[1m[22m[2m │ gzip:     2.38 kB[22m
+[2mdist/[22m[36massets/index-CUtn8ge1.js                     [39m[1m[2m  260.08 kB[22m[1m[22m[2m │ gzip:    87.90 kB[22m
+[32m✓ built in 4.99s[39m

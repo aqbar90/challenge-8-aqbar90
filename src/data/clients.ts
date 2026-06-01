@@ -1,10 +1,10 @@
-import Upwork from '../assets/icons/brands/Upwork.png';
-import Zoom from '../assets/icons/brands/zoom.png';
-import Postman from '../assets/icons/brands/postman.png';
-import Databricks from '../assets/icons/brands/databricks.png';
-import Airbnb from '../assets/icons/brands/airbnb.png';
-import Dropbox from '../assets/icons/brands/dropbox.png';
-import Paypal from '../assets/icons/brands/paypal.png';
+import Upwork from '../assets/icons/Brands/Upwork.png';
+import Zoom from '../assets/icons/Brands/zoom.png';
+import Postman from '../assets/icons/Brands/postman.png';
+import Databricks from '../assets/icons/Brands/databricks.png';
+import Airbnb from '../assets/icons/Brands/airbnb.png';
+import Dropbox from '../assets/icons/Brands/dropbox.png';
+import Paypal from '../assets/icons/Brands/paypal.png';
 import Adobe from '../assets/icons/Brands/Adobe.png';
 import Netflix from '../assets/icons/Brands/Netflix.png';
 
