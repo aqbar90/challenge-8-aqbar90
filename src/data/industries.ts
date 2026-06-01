@@ -1,4 +1,4 @@
-import fintechImage from '../assets/Image/Industries/fintech.jpg';
+import fintechImage from '../assets/Image/Industries/Fintech.jpg';
 import ecommerceImage from '../assets/Image/Industries/E-Commerce.jpg';
 import healthcareImage from '../assets/Image/Industries/Healthcare.jpg';
 
