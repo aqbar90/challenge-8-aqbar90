@@ -1,8 +1,6 @@
 import { useState } from 'react';
-
 import Container from '../layout/Container';
 import IndustryMenu from '../ui/IndustryMenu';
-
 import { industriesData } from '../../data/industries';
 
 const IndustrySection = () => {

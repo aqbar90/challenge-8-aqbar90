@@ -204,3 +204,15 @@ body {
 .animate-marquee {
   animation: marquee 20s linear infinite;
 }
+
+.hero-image-mask {
+  mask-image: radial-gradient(square at center, white 100%, transparent 100%);
+
+  -webkit-mask-image: radial-gradient(
+    square at center,
+    white 100%,
+    transparent 100%
+  );
+
+  filter: drop-shadow(0 0 60px rgba(243, 144, 119, 0.2));
+}

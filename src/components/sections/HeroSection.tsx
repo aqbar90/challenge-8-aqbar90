@@ -29,6 +29,7 @@ const HeroSection = () => {
         <div
           className='
             relative
+            md:max-w-190
             py-4
             flex
             flex-col
@@ -41,6 +42,7 @@ const HeroSection = () => {
 
           <div
             className='
+            w-full
             top-24
             lg:text-left
             lg:absolute
@@ -102,7 +104,7 @@ const HeroSection = () => {
               <Button
                 size='md'
                 className='
-                  min-w-110
+                  min-w-85
                   h-11
                   p-2
                   gap-1
@@ -114,40 +116,66 @@ const HeroSection = () => {
               </Button>
             </div>
           </div>
-          <div
-            className='
-              relative
-              flex
-              justify-center
-              mt-16
-              lg:justify-end
-              lg:-translate-y-60
-              lg:absolute
-              lg:top-[-80px]
-              lg:-right-37.5
-              lg:z-10
-              '
-          >
-            <img
-              src={darkMode ? heroImageDarkMode : heroImage}
-              alt='Hero Image'
-              loading='eager'
-              decoding='async'
-              className='
-              w-full
-              max-w-105
-              md:max-w-130
-              lg:max-w-200
-              lg:object-contain
-              lg:relative
-              lg:z-10
-              transition-all
-              duration-500
-            '
-            />
-          </div>
         </div>
       </Container>
+      <div
+        className='
+              relative
+              flex
+              mt-16
+              lg:justify-end
+              lg:-translate-y-15
+              lg:absolute
+              lg:top-[-20px]
+              lg:right-0
+              lg:z-10
+              lg:min-w-120
+              '
+      >
+        <div
+          className='
+            relative
+            w-full
+            max-w-105
+            md:max-w-130
+            lg:max-w-200
+          '
+        >
+          {/* Light */}
+          <img
+            src={heroImage}
+            alt='Hero Light'
+            loading='eager'
+            decoding='async'
+            className={`
+              absolute
+              inset-0
+              w-full
+              h-auto
+              hero-image-mask
+              transition-opacity
+              duration-300
+              ${darkMode ? 'opacity-0' : 'opacity-100'}
+            `}
+          />
+
+          {/* Dark */}
+          <img
+            src={heroImageDarkMode}
+            alt='Hero Dark'
+            loading='eager'
+            decoding='async'
+            className={`
+              w-full
+              h-auto
+              hero-image-mask
+              transition-opacity
+              duration-300
+              ${darkMode ? 'opacity-100' : 'opacity-0'}
+            `}
+          />
+        </div>
+      </div>
     </section>
   );
 };
