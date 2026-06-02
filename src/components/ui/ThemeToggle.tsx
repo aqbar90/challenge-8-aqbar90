@@ -21,7 +21,11 @@ const ThemeToggle = () => {
         hover:border-primary
       '
     >
-      {darkMode ? <Sun size={12} /> : <Moon size={12} />}
+      {darkMode ? (
+        <Sun size={22} fill='#FACC15' color='#FACC15' strokeWidth={2} />
+      ) : (
+        <Moon size={22} fill='#A78BFA' color='#A78BFA' strokeWidth={2} />
+      )}
     </button>
   );
 };
