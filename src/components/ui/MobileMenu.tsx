@@ -19,7 +19,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
         duration-300
       '
     >
-      <div className='flex flex-col px-xl py-3xl'>
+      <div className='flex flex-col px-xl py-1.75'>
         {/* Header */}
 
         <div className='flex items-center justify-between'>
@@ -64,7 +64,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
           ))}
 
           <div>
-            <Button size='md' className='w-110'>
+            <Button size='md' className='min-w-85'>
               Let's Talk
             </Button>
           </div>

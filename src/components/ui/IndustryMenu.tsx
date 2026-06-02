@@ -28,7 +28,6 @@ const IndustryMenu = ({ title, active, onClick }: IndustryMenuProps) => {
           rounded-full
           transition-all
           duration-300
-
           ${active ? 'bg-primary' : 'bg-neutral-300'}
         `}
       />
@@ -48,8 +47,7 @@ const IndustryMenu = ({ title, active, onClick }: IndustryMenuProps) => {
           lg:leading-xl
           transition-all
           duration-300
-
-          ${active ? 'font-semibold text-neutral-900' : 'text-neutral-400 dark:text-neutral-300'}
+          ${active ? 'font-bold font-primary text-neutral-800' : 'text-neutral-400 dark:text-neutral-400'}
         `}
       >
         {title}
